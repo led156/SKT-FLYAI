@@ -1,6 +1,7 @@
 temp
 *dataset*
 .DS_Store
+ignore/
 
 *chromedriver*
 
