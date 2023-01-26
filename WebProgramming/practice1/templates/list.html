@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{% block content %}
+
+<table class="table table-striped table-hover">
+    <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">사진</th>
+            <th scope="col">이름</th>
+            <th scope="col">나이</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for i in user %}
+        <tr>
+          <th scope="row" width="180">{{ i['num'] }}
+            {% if ss_id == i['userid'] || ss_id == 'admin'%}
+            <a href="/edit?num={{i['num']}}" type="button" class="btn btn-success">수정</button>
+            <a href="/delete?num={{i['num']}}" type="button" class="btn btn-secondary">삭제</button>
+            {% endif %}
+          </th>
+          <td width="180">
+            {% if user[loop.index0][2] %}
+                <img src={{ user[loop.index0][2] }} style="width:100px; height:100px;"/>
+            {% else %}
+                <img src="/static/upload/default.jpeg" style="width:100px; height:100px;"/>
+            {% endif %}
+          </td>
+          <td width="180">{{ user[loop.index0][0] }}</td>
+          <td>{{ user[loop.index0][1] }}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+</table>
+
+{% endblock %}

@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="container">
+    <p>로그인</p>
+    <form method="post" action="/login">
+        <div class="input-group mb-4">
+            <span class="input-group-text">아이디</span>
+            <input type="text" class="form-control" name="userid" value="" />
+        </div>
+        <div class="input-group mb-4">
+            <span class="input-group-text">비밀번호</span>
+            <input type="password" class="form-control" name="userpw" value="" />
+        </div>
+        <div class="d-grid gap-1">
+            <button type="submit" class="btn btn-primary">로그인</button>
+        </div>
+        <div class="d-grid gap-1">
+            <p>&nbsp</p>
+            <a href="/join" type="button" class="btn btn-outline-success">회원가입</a>
+        </div>
+        {% if msg %}
+        <div class="d-grid gap-2">
+            <p>&nbsp</p>
+            <div class="alert alert-danger" role="alert">
+                {{msg}}
+            </div>
+        </div>
+        {% endif %}
+    </form>
+</div>
+{% endblock %}

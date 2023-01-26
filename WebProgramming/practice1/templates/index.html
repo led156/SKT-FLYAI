@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block content %}
+
+<h1>어서오세요</h1>
+
+
+{% if ss_name %}
+<h2>{{ss_name}} 님, 안녕하세요.</h2>
+<img src={{ss_img}}/>
+<a href="/list" target="_blank">회원목록 보기</a>
+
+<a href="/logout" target="_blank">LOGOUT</a>
+{% else %}
+<a href="/login" target="_blank">LOGIN</a>
+<a href="/join" target="_blank">Register</a>
+{% endif %}
+
+<!-- <br/> -->
+<!-- <img src="/static/img/dog.jpeg" /> -->
+이동
+{% endblock %}
