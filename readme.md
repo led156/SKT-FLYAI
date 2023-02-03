@@ -1,5 +1,11 @@
 # SKT FLYAI
 
+# 🙇 스터디 그룹
+### - Algorithm : [Github](https://github.com/SKT-FlyAi/Algorithm)
+### - TIL : [Github](https://github.com/SKT-FlyAi/SKT-FLYAI-Archiving)
+
+# ✏️ 주차별 학습
+
 ## 1주차 : 빅데이터 with 파이썬
 |차시|날짜|학습내용|활동내용|
 |---|---|---|---|
