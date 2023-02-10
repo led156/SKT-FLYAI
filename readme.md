@@ -82,8 +82,8 @@
 |44|02/06|||
 |45|02/07|||
 |46|02/08|||
-|47|02/09|||
-|48|02/10|||
+|47|02/09||[js-pipeline-project](https://github.com/led156/js-pipeline-project)|
+|48|02/10||[Github-Actions](https://github.com/led156/Github-Actions)|
 
 
 ## 9주차 : AI 융합 프로그래밍, 챗봇 프로그래밍
